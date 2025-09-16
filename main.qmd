@@ -1,0 +1,22 @@
+---
+title: "Diamonds are awesome"
+format: html
+editor: visual
+---
+
+## Looksi here! Shiny!
+
+```{r}
+#| echo: false
+# Load the diamonds dataset
+library(ggplot2)
+data(diamonds)
+# Scatterplot of carat vs price
+ggplot(data = diamonds, aes(x = carat, y = price)) +
+geom_point(color = "blue", alpha = 0.5) +
+ggtitle("Carat vs Price") +
+xlab("Carat") +
+ylab("Price (USD)")
+```
+
+Beautiful!
